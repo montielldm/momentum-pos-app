@@ -37,7 +37,7 @@ export default function LayoutProtected() {
                         <UserMenu />
                     </div>
                 </div>
-                <div className='bg-neutral-50 h-screen-main'>
+                <div className='bg-white h-screen-main'>
                     <Outlet />
                 </div>
             </main>

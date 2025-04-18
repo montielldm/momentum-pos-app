@@ -38,6 +38,13 @@ export const menu: MenuItem[] = [
     {
         title: "Settings",
         url: "/app/settings",
-
+    },
+    {
+        title: "Headquarters",
+        url: "/app/settings/headquarters",
+    },
+    {
+        title: "Tables",
+        url: "/app/settings/tables",
     },
 ]

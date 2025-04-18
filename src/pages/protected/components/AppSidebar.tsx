@@ -41,7 +41,7 @@ export function AppSidebar() {
                             <div className="flex flex-col gap-1 px-1.5 py-1">
                                 <SidebarMenuItem>
                                     <SidebarMenuButton variant={"outline"} tooltip="Home" asChild isActive={"/app" === pathname}>
-                                        <Link to="/app">
+                                        <Link to="/app" viewTransition>
                                             <House />
                                             <span className="font-medium">Home</span>
                                         </Link>
@@ -61,7 +61,7 @@ export function AppSidebar() {
                             <div className="flex flex-col gap-1 px-1.5 py-1">
                                 <SidebarMenuItem>
                                     <SidebarMenuButton variant={"outline"} tooltip="Tickets" asChild isActive={pathname.includes("/app/tickets")}>
-                                        <Link to="/app/tickets">
+                                        <Link to="/app/tickets" viewTransition>
                                             <Ticket />
                                             <span className="font-medium">Tickets</span>
                                         </Link>
@@ -69,7 +69,7 @@ export function AppSidebar() {
                                 </SidebarMenuItem>
                                 <SidebarMenuItem>
                                     <SidebarMenuButton variant={"outline"} tooltip="Restaurant" asChild isActive={pathname.includes("/app/restaurant")}>
-                                        <Link to="/app/restaurant">
+                                        <Link to="/app/restaurant" viewTransition>
                                             <IconRestaurant />
                                             <span className="font-medium">Restaurant</span>
                                         </Link>
@@ -89,7 +89,7 @@ export function AppSidebar() {
                             <div className="flex flex-col gap-1 px-1.5 py-1">
                                 <SidebarMenuItem>
                                     <SidebarMenuButton variant={"outline"} tooltip="Products" asChild isActive={pathname.includes("/app/products")}>
-                                        <Link to="/app/products">
+                                        <Link to="/app/products" viewTransition>
                                             <Carrot />
                                             <span className="font-medium">Products</span>
                                         </Link>
@@ -97,7 +97,7 @@ export function AppSidebar() {
                                 </SidebarMenuItem>
                                 <SidebarMenuItem>
                                     <SidebarMenuButton variant={"outline"} tooltip="Customers" asChild isActive={pathname.includes("/app/customers")}>
-                                        <Link to="/app/customers">
+                                        <Link to="/app/customers" viewTransition>
                                             <CircleUserRound />
                                             <span className="font-medium">Customers</span>
                                         </Link>
@@ -105,7 +105,7 @@ export function AppSidebar() {
                                 </SidebarMenuItem>
                                 <SidebarMenuItem>
                                     <SidebarMenuButton variant={"outline"} tooltip="Providers" asChild isActive={pathname.includes("/app/providers")}>
-                                        <Link to="/app/providers">
+                                        <Link to="/app/providers" viewTransition>
                                             <IconBuildingFactory2 />
                                             <span className="font-medium">Providers</span>
                                         </Link>
@@ -120,7 +120,7 @@ export function AppSidebar() {
                 <SidebarMenu>
                     <SidebarMenuItem>
                         <SidebarMenuButton tooltip={"Settings"} asChild>
-                            <Link to={"/app/settings"}>
+                            <Link to={"/app/settings"} viewTransition>
                                 <Settings />
                                 <span className="font-medium">Settings</span>
                             </Link>

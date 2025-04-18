@@ -82,7 +82,7 @@ export default function TicketsPage() {
             <Link to={"/app/tickets/create"} className={buttonVariants({
               variant: "success",
               size: "sm"
-            })}>
+            })} viewTransition>
                <Plus size={14} />
                Add ticket
             </Link>
