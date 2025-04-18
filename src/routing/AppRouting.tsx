@@ -30,6 +30,9 @@ import CustomersPage from "@/pages/protected/pages/customers/CustomersPage"
 
 // ---- SETTINGS ----
 import SettingsPage from "@/pages/protected/pages/settings/SettingsPage"
+import HeadquartersPage from "@/pages/protected/pages/settings/pages/headquarters/HeadquartersPage"
+import TablesPage from "@/pages/protected/pages/settings/pages/tables/TablesPage"
+import GeneralPage from "@/pages/protected/pages/settings/pages/general/GeneralPage"
 
 export default function AppRouting() {
   return (
@@ -53,7 +56,11 @@ export default function AppRouting() {
           <Route path="/app/providers" element={<ProvidersPage />} />
 
           <Route path="/app/customers" element={<CustomersPage />} />
-          <Route path="/app/settings" element={<SettingsPage />} />
+          <Route element={<SettingsPage />} >
+            <Route path="/app/settings" element={<GeneralPage />} />
+            <Route path="/app/settings/headquarters" element={<HeadquartersPage />} />
+            <Route path="/app/settings/tables" element={<TablesPage />} />
+          </Route>
         </Route>
     </Routes>
   )

@@ -1,6 +1,7 @@
 import Container from "@/components/container/Container"
 import Header from "../../components/Header"
 import TabListSettings from "./components/TabListSettings"
+import { Outlet } from "react-router-dom"
 
 export default function SettingsPage() {
     return (
@@ -10,6 +11,7 @@ export default function SettingsPage() {
                 description="List of all the tickets created so far, in different states."
             />
             <TabListSettings />
+            <Outlet />
         </Container>
     )
 }
