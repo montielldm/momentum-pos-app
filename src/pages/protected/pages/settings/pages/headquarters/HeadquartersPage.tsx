@@ -1,9 +1,7 @@
-import Container from "@/components/container/Container"
-
 export default function HeadquartersPage() {
-    return (
-        <Container>
-            <p>Welcome</p>
-        </Container>
-    )
+  return (
+    <div className="mt-2">
+      <p className="text-muted-foreground text-xs">Settings Headquarters</p>
+    </div>
+  );
 }
